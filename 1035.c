@@ -3,17 +3,17 @@
 
 int main (void) {
   int A,B,
-  	  C,D;
-  	scanf("%d", &A);
-  	scanf("%d", &B);
-  	scanf("%d", &C);
-  	scanf("%d", &D);
+      C,D;
+    scanf("%d", &A);
+    scanf("%d", &B);
+    scanf("%d", &C);
+    scanf("%d", &D);
   if (B > C &&
-  	  D > A &&
-  	  C + D > A + B &&
-  	  A % 2 == 0)
-  	printf("Valores aceitos\n");
+      D > A &&
+      C + D > A + B &&
+      A % 2 == 0)
+    printf("Valores aceitos\n");
   else
-  	printf("Valores nao aceitos\n");
+    printf("Valores nao aceitos\n");
  return 0;
 }
