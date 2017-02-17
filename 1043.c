@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 double perimetro (double,double,double);
-double area (double,double,double);
+double area (double,double,double); 
 bool verificacao (double,double,double);
 
 int main (void) {
