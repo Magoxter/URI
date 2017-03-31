@@ -5,7 +5,7 @@
 
 void troca (int*,int*);
 void ordena (int,int[]);
-
+ 
 int main () {
   int n,i,x,
       v[MAX];
