@@ -1,4 +1,4 @@
-    /* 1020 */
+    /* Tempo */
 #include <stdio.h>
 #define HORA 3600
 #define MINUTO 60
