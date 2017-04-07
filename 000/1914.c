@@ -1,4 +1,4 @@
-	/* Turma do Chaves */
+/* Turma do Chaves */
 #include <stdio.h>
 #include <string.h>
 #define MAX 1000
@@ -6,24 +6,20 @@
 typedef char string[MAX];
 
 int main (void) {
-  int 	 n,k,
-  		 par,
-  		 tam1,
-  	  	 impar,
-  		 result;
-  string jog1,
-  		 jog2,
-  		 nome1,
-  		 nome2;
+  int 	 n,k,par,
+         par,imp,
+         tam1,result;
+  string jog1,jog2,
+         nome1,nome2;
    scanf("%d", &n);
   for (k = 0 ; k < n; k++) {
-   	  scanf("%s", nome1);
-   	  scanf("%s", jog1); 
-   	  scanf("%s", nome2);
-   	  scanf("%s", jog2);
-   	  scanf("%d", &par);
-   	  scanf("%d", &impar);
-   	result = par + impar;
+    scanf("%s", nome1);
+    scanf("%s", jog1);
+    scanf("%s", nome2);
+    scanf("%s", jog2);
+    scanf("%d", &par);
+    scanf("%d", &imp);
+   result = par + imp;
     tam1 = strlen(jog1);
      if (result % 2 == 0) {
       if (tam1 == 3)
