@@ -3,11 +3,11 @@
 
 int main (void) {
   int cedulas,
-  	  cem,dez,
-  	  um,dois,
-  	  cinq,vinte,
-  	  cinco;
-  	scanf("%d", &cedulas);
+      cem,dez,
+      um,dois,
+      cinq,vinte,
+      cinco;
+    scanf("%d", &cedulas);
   cem = cedulas / 100;
   cinq = (cedulas - (cem*100)) / 50;
   vinte = (cedulas -(cem*100 + cinq*50)) / 20;
