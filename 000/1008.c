@@ -3,12 +3,12 @@
 
 int main (void) {
   int 	func,
-  	  	horas;
+        horas;
   float valor,
-  		salario;
-  	scanf("%d", &func);
-  	scanf("%d", &horas);
-  	scanf("%f", &valor);
+        salario;
+    scanf("%d", &func);
+    scanf("%d", &horas);
+    scanf("%f", &valor);
   salario = valor*horas;
    printf("NUMBER = %d\n", func);
    printf("SALARY = U$ %.2f\n", salario);
