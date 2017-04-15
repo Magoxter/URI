@@ -10,7 +10,7 @@ int main (void) {
        ctrl,t;
    scanf("%d", &r);
  for (k = 0; k < r; k++) {
- 	scanf(" %[^\n]%*c", txt);
+    scanf(" %[^\n]%*c", txt);
    n = strlen(txt);
    ctrl = 0;
   for (i = 0; i < n; i++) {
@@ -20,8 +20,8 @@ int main (void) {
       ctrl++;
     if (ctrl)
       txt[i]+=3;
-      ctrl = 0;
- }  f = n-1;
+      ctrl = 0;     }
+    f = n-1;
     m = f/2;
     i = 0;
   while (i <= m) {
