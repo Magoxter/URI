@@ -9,7 +9,7 @@ int main (void) {
    scanf("%f", &sup);
    d = 0;
   while(sup > 1.0) {
-  	sup /= 2.0;
+    sup /= 2.0;
    d++;
   } printf("%d dias\n", d);
  }
