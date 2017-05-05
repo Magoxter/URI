@@ -1,4 +1,4 @@
-	/* Tabuleiro */
+   /* Tabuleiro */
 #include <stdio.h>
 
 int main (void) {
