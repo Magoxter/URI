@@ -1,4 +1,4 @@
-    /* 1020 */
+    /* Idade */
 #include <stdio.h>
 #define ano 365
 #define mes 30
