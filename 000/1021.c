@@ -4,13 +4,13 @@
 int main (void) {
   double notas,moedas;
   int    um,cinco,
-  	     dez,dois,
-  	     cinq,cem,
+	 dez,dois,
+  	 cinq,cem,
          vinte;
   int    cinqC,pao,
          cincoC,umC,
          vinteC,dezC;
-  	scanf("%lf", &notas);
+    scanf("%lf", &notas);
   cem = notas / 100;
   cinq = (notas - (cem*100)) / 50;
   vinte = (notas -(cem*100 + cinq*50)) / 20;
