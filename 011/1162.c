@@ -27,10 +27,6 @@ int main (void) {
         }
       }
      }
-  
-
-
-
 
       printf("Optimal train swapping takes %d swaps.\n", ctrl);
     ctrl = 0;
