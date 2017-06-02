@@ -3,7 +3,7 @@
 
 int main (void) {
   int mes;
-  	scanf("%d", &mes);
+   scanf("%d", &mes);
   switch (mes) {
   	case 1:
   	  printf("January\n");
