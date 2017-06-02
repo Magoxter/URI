@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 enum {
-	Campinas = 19,
-	Paulo = 11,
-	Rio = 21,
-	Vitoria = 27,
-	Horizonte = 31,
-	Juiz = 32,
-	Brasilia = 61,
-	Salvador = 71
+Campinas = 19,
+Paulo = 11,
+Rio = 21,
+Vitoria = 27,
+Horizonte = 31,
+Juiz = 32,
+Brasilia = 61,
+Salvador = 71
 } Estado;
 
 int main (void) {
