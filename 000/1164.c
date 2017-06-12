@@ -16,6 +16,6 @@ int main (void) {
     printf("%d eh perfeito\n", n);
   else
     printf("%d nao eh perfeito\n", n);
- }
+ } 
  return 0;
 }
