@@ -2,26 +2,35 @@
 #include <stdio.h>
 
 int main (void) {
-  int cedulas,
-      cem,dez,
-      um,dois,
-      cinq,vinte,
-      cinco;
-    scanf("%d", &cedulas);
-  cem = cedulas / 100;
-  cinq = (cedulas - (cem*100)) / 50;
-  vinte = (cedulas -(cem*100 + cinq*50)) / 20;
-  dez = (cedulas -(cem*100+cinq*50+vinte*20)) / 10;
-  cinco = (cedulas -(cem*100+cinq*50+vinte*20+dez*10)) / 5;
-  dois = (cedulas -(cem*100+cinq*50+vinte*20+dez*10+cinco*5)) / 2;
-  um = (cedulas -(cem*100+cinq*50+vinte*20+dez*10+cinco*5+dois*2));
-   printf("%d\n", cedulas);
-   printf("%d nota(s) de R$ 100,00\n", cem);
-   printf("%d nota(s) de R$ 50,00\n", cinq);
-   printf("%d nota(s) de R$ 20,00\n", vinte);
-   printf("%d nota(s) de R$ 10,00\n", dez);
-   printf("%d nota(s) de R$ 5,00\n", cinco);
-   printf("%d nota(s) de R$ 2,00\n", dois);
-   printf("%d nota(s) de R$ 1,00\n", um);
+  int ced,x,
+      n100,
+      n050,
+      n020,
+      n010,
+      n005,
+      n002,
+      n001;
+    scanf("%d", &ced);
+  n100 = (ced / 100);
+  x = n100 * 100;
+  n050 = (ced - x) / 50;
+  x += n050 * 50;
+  n020 = (ced - x) / 20;
+  x += n020 * 20;
+  n010 = (ced - x) / 10;
+  x += n010 * 10;
+  n005 = (ced - x) / 5;
+  x += n005 * 5;
+  n002 = (ced - x) / 2;
+  x += n002 * 2;
+  n001 = (ced - x) / 1;
+   printf("%d\n", ced);
+   printf("%d nota(s) de R$ 100,00\n", n100);
+   printf("%d nota(s) de R$ 50,00\n", n050);
+   printf("%d nota(s) de R$ 20,00\n", n020);
+   printf("%d nota(s) de R$ 10,00\n", n010);
+   printf("%d nota(s) de R$ 5,00\n", n005);
+   printf("%d nota(s) de R$ 2,00\n", n002);
+   printf("%d nota(s) de R$ 1,00\n", n001);
  return 0;
 }
