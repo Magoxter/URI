@@ -10,20 +10,14 @@ int main (void) {
       n005,
       n002,
       n001;
-    scanf("%d", &ced);
-  n100 = (ced / 100);
-  x = n100 * 100;
-  n050 = (ced - x) / 50;
-  x += n050 * 50;
-  n020 = (ced - x) / 20;
-  x += n020 * 20;
-  n010 = (ced - x) / 10;
-  x += n010 * 10;
-  n005 = (ced - x) / 5;
-  x += n005 * 5;
-  n002 = (ced - x) / 2;
-  x += n002 * 2;
-  n001 = (ced - x) / 1;
+    scanf("%d", &ced);    x = 0;
+  n100 = (ced - x) / 100; x += n100 * 100;
+  n050 = (ced - x) / 50;  x += n050 * 50;
+  n020 = (ced - x) / 20;  x += n020 * 20;
+  n010 = (ced - x) / 10;  x += n010 * 10;
+  n005 = (ced - x) / 05;  x += n005 * 5;
+  n002 = (ced - x) / 02;  x += n002 * 2;
+  n001 = (ced - x) / 01;  x += n001 * 1;
    printf("%d\n", ced);
    printf("%d nota(s) de R$ 100,00\n", n100);
    printf("%d nota(s) de R$ 50,00\n", n050);
