@@ -1,53 +1,77 @@
-    /* Cartas */
-#include <stdio.h>
-#define MAX 1000
+		/* Cartas */
+#include "stdio.h"
+#include "stdlib.h"
 
-void troca (int*, int*);
+typedef struct celula {
+	  int num;
+ struct celula *prox;
+} cel;
+
+void insert (cel *,int);
+int  cards  (cel *,int);
+void print  (cel *);
 
 int main (void) {
-  int n,i,c,k,x,
-      card[MAX],
-      disc[MAX],
-      cartas;
-    scanf("%d", &cartas);
- while (cartas != 0) {
-  x = cartas;
-  n = cartas;
-  k = n;
- for (i = 0; i < n; i++) {
-   card[i] = k;
-   k--;
- } c = 0;
-  while (cartas > 1) {
-     disc[c] = card[n-1];
-     card[n-1] = 0;
-     n--; c++;
-  if (n > 1)
-  for (i = n-1; i > 0; i--)
-     troca(&card[i],&card[i-1]);
-    cartas--;
-   }
-   for (i = 0; i < x; i++)
-      if (card[i] != 0)
-        x = i;
-     printf("Discarded cards: ");
-   for (i = 0; i < c; i++) {
-      printf("%d", disc[i]);
-    if (i != c - 1)
-      printf(", ");
-   }  printf("\n");
-      printf("Remaining card: ");
-      printf("%d\n", card[x]);
-    x = 0;
-  scanf("%d", &cartas);
+  int n,i;
+  cel *h;
+  cel *p;
+   scanf("%d", &n);
+ while (n) {
+    i = 1;
+    h = (cel *)malloc(sizeof(cel));
+    h->prox = NULL;
+  while (n--) {
+    insert(h,i);
+   ++i;
+  } p = h;
+  while (p->prox != NULL)
+    p = p->prox;
+   p->prox = h->prox;
+  printf("Discarded cards:");
+   n = cards(p,i-1);
+  printf("Remaining card: ");
+  printf("%d\n", n);
+  scanf("%d", &n);
  }
  return 0;
 }
 
-void troca (int *x, int *y) {
-  int tmp;
-    tmp = *x;
-    *x = *y;
-    *y = tmp;
+void insert (cel *p,int x) {
+  cel *q;
+   q = (cel *)malloc(sizeof(cel));
+   q->num = x;
+   q->prox = p->prox;
+   p->prox = q;
+ return;
+}
+
+int cards (cel *p,int n) {
+  cel *q;
+   q = p;
+ while (q->prox != p)
+   q = q->prox;
+ while (q->prox != q) {
+   q->prox = p->prox;
+  printf(" %d", p->num);
+  free(p);
+   p = q;
+  while (p->prox != q)
+    p = p->prox;
+  while (q->prox != p)
+    q = q->prox;
+  if (q->prox != q)
+   printf(",");
+ } printf("\n");
+ return q->num;
+}
+
+void print (cel *p) {
+  int x;
+   x = p->num;
+   p = p->prox;
+ while (p->num != x) {
+   printf("%d ", p->num);
+    p = p->prox;
+ } printf("%d\n", x);
  return;
 }
